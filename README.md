@@ -1,26 +1,30 @@
-# [ElementBot](https://telegram.me/ElementTG)
-
-**An advanced and powerful administration bot based on [Seed/CliBot](https://github.com/seedteam/teleseed) licensed under the [GNU General Public License](https://github.com/AllwenWaker/ElementBot/blob/supergroups/LICENSE)**.
-# Features
-
-* **A powerful antispam system with custom sensitivity for each group**
-* **Multiple realms (admin groups)**
-* **Recalcitrant to any kind of spamming (X/Y bots, name/photo changers, etc.)**
-* **Global banning**
-* **Broadcast to all groups**
-* **Group and  links**
-* **Kick, ban and unban by reply**
-* **Groups, ban and global ban list**
-* **Logging anything that happens in a group**
-* **Invitation by username**
-* **Group administration via private messages**
-* **Only mods, owner and admin can add bots in groups**
-* **Arabic lock**
-* **Lock TgService**
-* **Chat list**
-* **And more!**
-*  **ElementBot
-
+# [ElementBot]
 
 * * *
 
+# Installation
+
+```sh
+# Install dependencies.
+# Tested on Ubuntu 14.04. For other OSs, check out https://github.com/yagop/telegram-bot/wiki/Installation
+sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev
+
+# Let's install the bot.
+cd $HOME
+git clone https://github.com/doroodzan/ElementBot.git
+cd mega-shield
+chmod +x launch.sh
+./launch.sh install
+./launch.sh # Enter a phone number & confirmation code.
+```
+
+Auto Launch
+
+```
+
+cd mega-shield
+killall screen
+killall tmux
+killall telegram-cli
+tmux new-session -s script "bash steady.sh -t"
+```
